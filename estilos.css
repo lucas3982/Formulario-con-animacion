@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #00b09b;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #96c93d, #00b09b);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #96c93d, #00b09b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+}
+
+img {
+    position: relative;
+    width: 40%;
+    border-radius: 4px;
+    margin-left: 135px;
+    
+}
+
+.formulario {
+    width: 500px;
+    margin: auto;
+    max-width: 100%;
+    margin-top: 30px;
+    padding: 20px;
+    box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
+    position: relative;
+
+}
+
+.formulario__titulo {
+    text-align: center;
+    margin-top: 0;
+    color: black;
+}
+
+.formulario__input, .formulario__label, .formulario__submit {
+    display: block;
+    width: 100%;
+    font-size: 1.3em;
+    
+}
+
+.formulario__input {
+    padding: 20px;
+    background: transparent;
+    border: 1px solid rgb(red, green, blue);
+    margin-bottom: 40px;
+}
+
+/*lo que indica el focus es donde esta posionado el cursor*/
+.formulario__input:focus {
+    outline: 1px solid rgba(3, 3, 3, 0.7);
+}
+
+.formulario__input:focus + .formulario__label{
+    margin-top: -135px;
+}
+
+.formulario__label {
+    padding-left: 15px;
+    position: absolute;
+    margin-top: -85px;
+    z-index: -20;
+    transition: all 0.2s;
+
+}
+
+.formulario__submit {
+    background-color: rgb(104, 212, 158);
+    color: rgb(15, 8, 8);
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+
+}
+
+.fijar {
+    margin-top: -135px;
+}
